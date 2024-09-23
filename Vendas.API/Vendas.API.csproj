@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Vendas.Data\Vendas.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Vendas.Domain\Vendas.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

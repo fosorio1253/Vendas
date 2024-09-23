@@ -1,3 +1,6 @@
+using Vendas.Domain.Implementations;
+using Vendas.Domain.Interfaces;
+
 using Microsoft.EntityFrameworkCore;
 using Vendas.Data;
 using Vendas.Data.Interfaces;
@@ -12,6 +15,7 @@ builder.Services.AddDbContext<VendasContext>(options =>
 builder.Services.AddScoped<IVendaRepository, VendaRepository>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped<IVendaService, VendaService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
