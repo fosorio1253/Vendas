@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Repositories\" />
-    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vendas.DTO\Vendas.DTO.csproj" />
   </ItemGroup>
 
 </Project>
